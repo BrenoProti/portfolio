@@ -1,6 +1,7 @@
 import React from 'react'
 import Hand from '../../assets/hand.svg'
 import Send from '../../assets/send.svg'
+import Typed from 'react-typed'
 
 function Data() {
   return (
@@ -13,12 +14,20 @@ function Data() {
         </h1>
 
         <h3 className='home__subtitle'>
-            Fullstack Developer
+            Desenvolvedor Full Stack
         </h3>
 
         <p className="home__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maxime eaque
-             aperiam perspiciatis, sequi.
+        <Typed 
+                strings={[
+                    "Olá, que bom ver você aqui! Meu nome é Breno, tenho 23 anos e sou programador!",
+                    "Se quiser falar comigo, é só clicar no botão abaixo =D"]}
+                typeSpeed={30}
+                backSpeed={20}
+                backDelay={3000}
+                loop
+                loopCount={3}
+            />
         </p>
 
         <a href="#contact" className="button button--flex">
